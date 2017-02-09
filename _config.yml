@@ -1,24 +1,41 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+### your site title here
 
-# Site settings
-title: Sciblog
-email: airrayagroup@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "/sciblog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-author: AIRRAYA
+title: Hagura - Light!
+baseurl: /hagura # name of the repository
+email: your@email.com
 
-# Gems
-gems: [jekyll-paginate]
 
-# Build settings
+
+highlighter: rouge
 markdown: kramdown
-paginate: 5
-paginate_path: 'page:num/'
-comments: true
-excerpt_separator: <!-- more -->
+### exclude the instructions / write-up in the README.md
+
+
+# Tracker
+analytics: UA-83979019-1
+
+# Comments
+disqus-shortname: webjeda-demo
+
+
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+  
+
+sass:
+ style: compressed
+
+exclude:
+- README.md
+
+
+gems: [jekyll-seo-tag, jekyll-paginate]
